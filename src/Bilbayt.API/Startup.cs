@@ -77,7 +77,7 @@ namespace Bilbayt.API
             });
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Coure Identity Server API", Version = "v1.0" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Bilbayt API", Version = "v1.0" });
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
                 {
                     Name = "Authorization",
@@ -137,7 +137,7 @@ namespace Bilbayt.API
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Smat Ecommerce API v1.0");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Bilbayt API v1.0");
                 c.RoutePrefix = string.Empty;
             });
 
